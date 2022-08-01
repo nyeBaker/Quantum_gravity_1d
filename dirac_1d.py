@@ -1,3 +1,4 @@
+#Adapted from https://github.com/BryceWayne/Dirac
 from cmath import tanh
 import numpy as np
 import matplotlib.pyplot as plt
