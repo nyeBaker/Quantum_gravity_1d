@@ -16,3 +16,14 @@ After the code has ran a .gif file should appear with a gif of the evolution ove
 
 - To look at the wave function change the `PLOT_WF` variable in `dirac_1d.py` from False to True.
 - To examine the system in a situation where mass varies in space change the `VAR_MASS` variable from False to True
+
+## TODO
+    - implement Crank-Neilson differentiation scheme
+    - Curved spacetime
+        - Research method for implementation
+        - Modify code to include curved space time
+    - Klein Gordon solver
+        - write simple leapfrog method for klein gordon solver
+        - Variable mass
+        - Curved space time
+    - Couple the equations together.
