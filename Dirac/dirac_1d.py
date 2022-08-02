@@ -16,7 +16,7 @@ import os
 path = os.getcwd()
 
 path_2d = os.path.join(path, '2D')
-path_3d = os.path.join(path, '3D')
+
 
 def chdir(path):
     if not os.path.isdir(path):

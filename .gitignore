@@ -1,4 +1,5 @@
 env_dirac/*
-2d/*
+Dirac/2D/*
+KleinGordon/2D/*
 *.png
 *.gif
