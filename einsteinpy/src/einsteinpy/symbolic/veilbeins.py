@@ -11,7 +11,7 @@ class veilbeins(BaseRelativityTensor):
     """
 
     def __init__(
-        self, arr, syms, config="ull", parent_metric=None, name="Veilbein"
+        self, arr, syms, config="ul", parent_metric=None, name="Veilbein"
     ):
         """
         Constructor and Initializer

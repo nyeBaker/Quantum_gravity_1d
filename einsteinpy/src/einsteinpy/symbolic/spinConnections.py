@@ -2,8 +2,9 @@ import numpy as np
 import sympy
 
 from einsteinpy.symbolic.helpers import _change_name
+from sympy import simplify, tensorcontraction, tensorproduct
 from einsteinpy.symbolic.tensor import BaseRelativityTensor, _change_config
-from einsteinpy.symbolic import veilbeins, christoffel
+from einsteinpy.symbolic import veilbeins, ChristoffelSymbols
 
 
 class spinConnections(BaseRelativityTensor):
@@ -62,29 +63,14 @@ class spinConnections(BaseRelativityTensor):
         # First we need to calcualte the christoffel symbol and the veilbeins
 
         dims = metric.dims
-        chl = christoffel.from_metric(metric).tensor()
-        e = veilbeins.from_metric(metric).tensor()
+        chl = ChristoffelSymbols.from_metric(metric).tensor()
+        e_ul = veilbeins.from_metric(metric).tensor()
+        e_uu = veilbeins.from_metric(metric).tensor()
 
-        tmplist = np.zeros((dims,dims,dims),dtype = int).tolist()
+        e_uu = tensorcontraction(tensorproduct(e_uu,metric.change_config(newconfig="uu")),(1,2))
 
-        for t in range(dims ** 3):
-            # i,j,k each goes from 0 to (dims-1)
-            k = t % dims
-            j = (int(t / dims)) % (dims)
-            i = (int(t / (dims ** 2))) % (dims)
-
-            # We can take advantage of the fact that the spin connections are antismmetric
-
-            
-
-
-
-
-
-
-
-
+        tmp1 = tensorcontraction(tensorproduct(chl,e_uu),(1,3))    
+        spin_connection = tensorcontraction(tensorproduct(e_ul,tmp1),(1,2))
         
-        
-        return veilbein
+        return spin_connection
 

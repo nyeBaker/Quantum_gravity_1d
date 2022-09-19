@@ -1,0 +1,12 @@
+--2022-09-18 12:09:49--  https://update.code.visualstudio.com/commit:74b1f979648cc44d385a2286793c226e611f59e7/server-linux-x64/stable
+Resolving update.code.visualstudio.com (update.code.visualstudio.com)... 51.144.164.215, 40.90.4.201, 64.4.48.201, ...
+Connecting to update.code.visualstudio.com (update.code.visualstudio.com)|51.144.164.215|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://az764295.vo.msecnd.net/stable/74b1f979648cc44d385a2286793c226e611f59e7/vscode-server-linux-x64.tar.gz [following]
+--2022-09-18 12:09:51--  https://az764295.vo.msecnd.net/stable/74b1f979648cc44d385a2286793c226e611f59e7/vscode-server-linux-x64.tar.gz
+Resolving az764295.vo.msecnd.net (az764295.vo.msecnd.net)... 152.199.19.160, 72.21.80.5, 72.21.80.6, ...
+Connecting to az764295.vo.msecnd.net (az764295.vo.msecnd.net)|152.199.19.160|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 58366521 (56M) [application/gzip]
+Saving to: ‘/home/nye/.vscode-server/bin/74b1f979648cc44d385a2286793c226e611f59e7-1663499381.tar.gz’
+

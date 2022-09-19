@@ -10,7 +10,6 @@ from einsteinpy.symbolic.helpers import (
     sympy_to_np_array,
 )
 
-
 def _config_checker(config):
     # check if the string for config contains 'u' and 'l' only
     if not isinstance(config, str):

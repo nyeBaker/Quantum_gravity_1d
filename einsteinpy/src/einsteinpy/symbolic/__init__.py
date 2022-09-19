@@ -29,6 +29,7 @@ from .tensor import BaseRelativityTensor, Tensor
 from .vector import GenericVector
 from .weyl import WeylTensor
 from .veilbeins import veilbeins
+from .spinConnections import spinConnections
 
 __all__ = [
     "ChristoffelSymbols",
@@ -68,4 +69,5 @@ __all__ = [
     "ReissnerNordstorm",
     "Schwarzschild",
     "veilbeins",
+    "spinConnections",
 ]
